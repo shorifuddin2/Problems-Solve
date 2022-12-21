@@ -1,0 +1,176 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+/* -------------------- Problem-1 ------------------ */
+function calculate()
+{
+	var pai = 3.14159;
+	var R = document.getElementById("input").value;
+	var A = pai*R*R;
+	
+	A = parseFloat(A).toFixed(4);
+	
+	alert('A='+ A);
+}
+
+/* -------------------- Problem-2 ------------------ */
+
+function calculate()
+{
+	
+	var A = document.getElementById("inputA").value;
+	var B = document.getElementById("inputB").value;
+	var C = document.getElementById("inputC").value;
+	var total=A*2+B*3+C*5;
+	var average=total/10;
+	
+	alert("MEDIA = "+ average);
+	
+	
+}
+
+/* -------------------- Problem-3 ------------------ */
+
+function calculate()
+{
+	var msg = 'NOTAS: \r\n';
+	
+	var taka = document.getElementById("input-3").value;
+	
+	var div = Math.trunc(taka / 100);
+	var rem = taka % 100;
+	
+	msg = msg + div + ' nota(s) de R$ 100.00\r\n';
+	
+	taka = rem;
+	
+	div = Math.trunc(taka / 50);
+	rem = taka % 50;
+	
+	msg = msg + div + ' nota(s) de R$ 50.00\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 20);
+	rem = taka % 20;
+	
+	msg = msg + div + ' nota(s) de R$ 20.00\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 10);
+	rem = taka % 10;
+	
+	msg = msg + div + ' nota(s) de R$ 10.00\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 5);
+	rem = taka % 5;
+	
+	msg = msg + div + ' nota(s) de R$ 5.00\r\n';
+	
+	taka = rem;
+	
+	
+	//--------------------//
+	div = Math.trunc(taka / 2);
+	rem = taka % 2;
+	
+	msg = msg + div + ' nota(s) de R$ 2.00\r\n';
+	
+	taka = rem;
+	alert(msg);
+	
+	var msg = 'MOEDAS: \r\n';
+	
+		var taka = document.getElementById("inputA").value;
+	var div = Math.trunc(taka / 1.00);
+	var rem = taka % 1.00;
+	
+	msg = msg + div + ' moeda(s) de R$ 1.00\r\n';
+	
+	taka = rem;
+	
+	div = Math.trunc(taka / 0.50);
+	rem = taka % 0.50;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.50\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 0.25);
+	rem = taka % 0.25;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.25\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 0.10);
+	rem = taka % 0.10;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.10\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 0.05);
+	rem = taka %0.05;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.05\r\n';
+	
+	taka = rem;
+	
+	//--------------------//
+	div = Math.trunc(taka / 0.01);
+	rem = taka % 0.01;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.01\r\n';
+	
+	taka = rem;
+	
+	alert(msg);
+}
+</script>
+
+</head>
+
+<body>
+
+	<!------------ Problem 1 ------------>
+	<h2>Problem-1</h2>
+	<input id="input" />
+	<input id="button" type="submit" value="Calculate" onclick="calculate()" /> 
+		<br/>
+		<br/>
+	<!------------ Problem 2 ------------>
+	<h2>Problem-2</h2>
+	<h3>A = Value</h3>
+	<input id="inputA" placeholder="Input A"/>
+	<br/>
+	<h3>B = Value</h3>
+	<input id ="inputB" placeholder="Input B"/>
+	<br/>
+	<h3>C = Value</h3>
+	<input id="inputC" placeholder="Input C"/>
+	<br/>
+	<br/>
+	<input id="buttonA" type="submit" value="Average" onclick="calculate()" />
+
+	<br/>
+	<br/>
+
+	<!------------ Problem 3 ------------>
+	<h2>Problem-3</h2>
+<input id="input-3" />
+<input id="buttonA" type="submit" value="Calculate" onclick="calculate()" /> 
+</body>
+</html>
+
